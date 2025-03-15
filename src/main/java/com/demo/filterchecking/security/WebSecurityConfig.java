@@ -12,14 +12,14 @@ public class WebSecurityConfig {
     @Bean
     public InMemoryUserDetailsManager inMemoryUserDetailsManager() {
         UserDetails user = User.builder()
-                .username("ritik")
-                .password("{noop}ritik")
+                .username("user1")
+                .password("{noop}pass1")
                 .authorities("ROLE_USER")
                 .build();
 
         UserDetails user1 = User.builder()
-                .username("abhi")
-                .password("{noop}singh")
+                .username("user2")
+                .password("{noop}pass2")
                 .authorities("ROLE_ADMIN")
                 .build();
 
